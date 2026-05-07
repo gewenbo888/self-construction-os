@@ -36,13 +36,13 @@ document.querySelectorAll(".theme-toggle button").forEach(btn =>
 const PROMPTS = [
   // installed
   { theme: "installed", theme_zh: "被安装",
-    en: "What 'should' in your head was installed by someone who isn't in your life anymore?", zh: "你头脑里的哪条"应该"，是由现在已不在你生活里的人安装的？" },
+    en: "What 'should' in your head was installed by someone who isn't in your life anymore?", zh: "你头脑里的哪条“应该”，是由现在已不在你生活里的人安装的？" },
   { theme: "installed", theme_zh: "被安装",
     en: "Which of your opinions did you arrive at by reading, vs. by inheritance?", zh: "你的哪些观点是<em>读出来的</em>，哪些是<em>继承来的</em>？" },
   { theme: "installed", theme_zh: "被安装",
-    en: "What 'success' definition were you handed and never questioned?", zh: "什么样的"成功"定义是被递给你的，而你从未质疑过？" },
+    en: "What 'success' definition were you handed and never questioned?", zh: "什么样的“成功”定义是被递给你的，而你从未质疑过？" },
   { theme: "installed", theme_zh: "被安装",
-    en: "Whose voice were you hearing when you decided this was important?", zh: "当你决定"这件事重要"时，你听到的是谁的声音？" },
+    en: "Whose voice were you hearing when you decided this was important?", zh: "当你决定“这件事重要”时，你听到的是谁的声音？" },
   { theme: "installed", theme_zh: "被安装",
     en: "What standard do you hold yourself to that you'd reject if a friend told you they followed it?", zh: "你给自己的哪条标准，如果朋友告诉你他们在遵守，你会立刻反对？" },
   { theme: "installed", theme_zh: "被安装",
@@ -50,11 +50,11 @@ const PROMPTS = [
   { theme: "installed", theme_zh: "被安装",
     en: "If your phone was 100m away for a day, what would you actually miss?", zh: "如果你的手机距离你 100 米一整天，你真正会想念的是什么？" },
   { theme: "installed", theme_zh: "被安装",
-    en: "What do you say you 'love' that you'd stop doing the moment social praise stopped?", zh: "你嘴上"热爱"的哪件事，一旦没有社交赞许就会立刻停下？" },
+    en: "What do you say you 'love' that you'd stop doing the moment social praise stopped?", zh: "你嘴上“热爱”的哪件事，一旦没有社交赞许就会立刻停下？" },
 
   // autopilot
   { theme: "autopilot", theme_zh: "自动驾驶",
-    en: "What did you do today that you can't remember <em>deciding</em> to do?", zh: "今天有哪些事，是你"做了"但不记得"决定"过的？" },
+    en: "What did you do today that you can't remember <em>deciding</em> to do?", zh: "今天有哪些事，是你“做了”但不记得“决定”过的？" },
   { theme: "autopilot", theme_zh: "自动驾驶",
     en: "Where in your day does autopilot run longest?", zh: "你一天中，自动驾驶模式最长的那一段是哪里？" },
   { theme: "autopilot", theme_zh: "自动驾驶",
@@ -64,21 +64,21 @@ const PROMPTS = [
   { theme: "autopilot", theme_zh: "自动驾驶",
     en: "Which app spends the most of you, and what does it give back?", zh: "哪个应用消耗你最多 —— 它给你回报了什么？" },
   { theme: "autopilot", theme_zh: "自动驾驶",
-    en: "When was the last time you said 'yes' that you wish you'd thought about for one minute longer?", zh: "你上一次说"好"的时候，事后希望自己多想了一分钟 —— 是什么时候？" },
+    en: "When was the last time you said 'yes' that you wish you'd thought about for one minute longer?", zh: "你上一次说“好”的时候，事后希望自己多想了一分钟 —— 是什么时候？" },
   { theme: "autopilot", theme_zh: "自动驾驶",
     en: "What sentence do you reflexively say that isn't really yours?", zh: "你反射性会说出来的哪一句话，其实并不是你自己的？" },
 
   // self-deception
   { theme: "deception", theme_zh: "自我欺骗",
-    en: "What is something true about you that you're pretending not to know?", zh: "关于你自己，有什么"已经是真的"，但你在假装不知道？" },
+    en: "What is something true about you that you're pretending not to know?", zh: "关于你自己，有什么“已经是真的”，但你在假装不知道？" },
   { theme: "deception", theme_zh: "自我欺骗",
-    en: "What's something you say is 'temporary' that has been true for years?", zh: "有什么你称之为"暂时"的事，已经持续了好几年？" },
+    en: "What's something you say is 'temporary' that has been true for years?", zh: "有什么你称之为“暂时”的事，已经持续了好几年？" },
   { theme: "deception", theme_zh: "自我欺骗",
     en: "What decision have you already made but haven't admitted to yourself?", zh: "有什么决定你其实已经做了，但还没向自己承认？" },
   { theme: "deception", theme_zh: "自我欺骗",
-    en: "What would your closest friend say first if asked what's true about your life?", zh: "如果你最亲近的朋友被问起"关于你生活的真话"，他/她会最先说什么？" },
+    en: "What would your closest friend say first if asked what's true about your life?", zh: "如果你最亲近的朋友被问起“关于你生活的真话”，他/她会最先说什么？" },
   { theme: "deception", theme_zh: "自我欺骗",
-    en: "What part of your story do you tell so it sounds better than it was?", zh: "你的故事里哪一段，你讲得比"它实际是的样子"更好听？" },
+    en: "What part of your story do you tell so it sounds better than it was?", zh: "你的故事里哪一段，你讲得比“它实际是的样子”更好听？" },
   { theme: "deception", theme_zh: "自我欺骗",
     en: "What mistake are you defending instead of repairing?", zh: "你正在为哪个错误辩护，而不是修复它？" },
   { theme: "deception", theme_zh: "自我欺骗",
@@ -88,13 +88,13 @@ const PROMPTS = [
 
   // identity
   { theme: "identity", theme_zh: "身份",
-    en: "Write three identity sentences that begin 'I'm the kind of person who…'", zh: "写下三句以"我是那种……的人"开头的身份语。" },
+    en: "Write three identity sentences that begin 'I'm the kind of person who…'", zh: "写下三句以“我是那种……的人”开头的身份语。" },
   { theme: "identity", theme_zh: "身份",
     en: "Whose voice first said this about you? A parent? A teacher? A peer?", zh: "你的这条身份语，最早是谁的声音说给你听的？父母？老师？同伴？" },
   { theme: "identity", theme_zh: "身份",
     en: "Of those sentences, which is still useful even though you didn't author it?", zh: "这些身份语中，哪一句虽然不是你写的，但仍然有用？" },
   { theme: "identity", theme_zh: "身份",
-    en: "Which one would you stop performing if you didn't fear losing approval?", zh: "如果不再害怕"失去认可"，你会停止"扮演"哪一句？" },
+    en: "Which one would you stop performing if you didn't fear losing approval?", zh: "如果不再害怕“失去认可”，你会停止“扮演”哪一句？" },
   { theme: "identity", theme_zh: "身份",
     en: "Who are you when no one is watching, and no algorithm is rewarding you?", zh: "没人在看，也没有算法奖励你的时候 —— 你是谁？" },
   { theme: "identity", theme_zh: "身份",
@@ -104,7 +104,7 @@ const PROMPTS = [
   { theme: "attention", theme_zh: "注意",
     en: "How many high-spike inputs are in your day? How many low-spike, high-depth ones?", zh: "你一天里有多少高峰值输入？又有多少低峰值、高深度的？" },
   { theme: "attention", theme_zh: "注意",
-    en: "What are you afraid would happen if you actually rested?", zh: "你害怕"如果真的休息了，会发生什么"？" },
+    en: "What are you afraid would happen if you actually rested?", zh: "你害怕“如果真的休息了，会发生什么”？" },
   { theme: "attention", theme_zh: "注意",
     en: "When was the last time you sustained a single thought for 30 minutes without checking anything?", zh: "你上一次连续 30 分钟保持一个想法、不查任何东西，是什么时候？" },
   { theme: "attention", theme_zh: "注意",
@@ -122,17 +122,17 @@ const PROMPTS = [
 
   // direction
   { theme: "direction", theme_zh: "方向",
-    en: "What does your calendar say is most important to you? Does it match what you'd <em>say</em> is most important?", zh: "你的日历显示什么对你最重要？这和你"嘴上说"最重要的事一致吗？" },
+    en: "What does your calendar say is most important to you? Does it match what you'd <em>say</em> is most important?", zh: "你的日历显示什么对你最重要？这和你“嘴上说”最重要的事一致吗？" },
   { theme: "direction", theme_zh: "方向",
-    en: "In ten years, what would have <em>made it</em> a life you respect?", zh: "十年之后，什么会让这一生<em>对得起</em>"我尊重的人生"？" },
+    en: "In ten years, what would have <em>made it</em> a life you respect?", zh: "十年之后，什么会让这一生<em>对得起</em>“我尊重的人生”？" },
   { theme: "direction", theme_zh: "方向",
-    en: "What are you waiting for permission to do?", zh: "有什么事，你在等"被允许"才去做？" },
+    en: "What are you waiting for permission to do?", zh: "有什么事，你在等“被允许”才去做？" },
   { theme: "direction", theme_zh: "方向",
-    en: "What would you do if you weren't trying to be someone you're not?", zh: "如果你不再试图成为某个"不是你"的人，你会做什么？" },
+    en: "What would you do if you weren't trying to be someone you're not?", zh: "如果你不再试图成为某个“不是你”的人，你会做什么？" },
   { theme: "direction", theme_zh: "方向",
-    en: "What kind of mistake have you been refusing to make for so long that not making it is now its own mistake?", zh: "有什么错你拒绝了太久，以至于"不犯它"本身已经成了一个错？" },
+    en: "What kind of mistake have you been refusing to make for so long that not making it is now its own mistake?", zh: "有什么错你拒绝了太久，以至于“不犯它”本身已经成了一个错？" },
   { theme: "direction", theme_zh: "方向",
-    en: "What 'should be obvious by now' is something you haven't actually decided?", zh: "什么"看起来早就应该明显了"的事，其实你根本还没决定？" },
+    en: "What 'should be obvious by now' is something you haven't actually decided?", zh: "什么“看起来早就应该明显了”的事，其实你根本还没决定？" },
 
   // construction
   { theme: "construction", theme_zh: "构建",
@@ -142,11 +142,11 @@ const PROMPTS = [
   { theme: "construction", theme_zh: "构建",
     en: "What's the smallest version of the action that even your worst-day self would do?", zh: "这个动作的最小版本是什么 —— 你最糟糕那一天的自己也会做？" },
   { theme: "construction", theme_zh: "构建",
-    en: "What would change if you treated this week as data instead of judgment?", zh: "如果你把这一周当作"数据"而不是"评判"，什么会变？" },
+    en: "What would change if you treated this week as data instead of judgment?", zh: "如果你把这一周当作“数据”而不是“评判”，什么会变？" },
   { theme: "construction", theme_zh: "构建",
     en: "If you could only keep one habit for the next ten years, which one?", zh: "如果未来十年只能保留一个习惯，哪一个？" },
   { theme: "construction", theme_zh: "构建",
-    en: "What does 'self-directed' mean to you specifically — not abstractly?", zh: "对你来说，"自主"具体是什么意思 —— 不要抽象地说？" },
+    en: "What does 'self-directed' mean to you specifically — not abstractly?", zh: "对你来说，“自主”具体是什么意思 —— 不要抽象地说？" },
 ];
 
 let lastIdx = -1;
@@ -188,15 +188,15 @@ const GUIDE = {
         "<strong>Once you can name three cues</strong> reliably for a week, pick one. Just one. Insert a 60-second pause between cue and action. Don't try to do the right thing yet. Just see what happens when the script can't run unimpeded."
       ],
       zh: [
-        "<strong>自动驾驶是默认状态。</strong>多数行为、想法、反应都在跑一些"在你能投票之前就被安装好"的脚本。"我在自动驾驶"这种感觉本身已经是有用的信号 —— 多数人根本没察觉。",
-        "<div class='reflect'>你一天里自动驾驶最长的那段是什么时候 —— 把它打开的"线索"是什么？</div>",
-        "<strong>第一步不是对抗自动驾驶，</strong>是<em>命名那个线索</em>。早上抓手机；下午三点开始刷；深夜资讯循环。每个线索都是一扇门 —— 在你能看见这扇门之前，你无法选择"在门口做什么"。",
-        "<strong>当你能可靠地命名三个线索一周后，</strong>挑一个 —— 只挑一个。在线索与动作之间插入 60 秒的暂停。不要急着去做"对的事"，先看看：当脚本无法畅通运行时，会发生什么。"
+        "<strong>自动驾驶是默认状态。</strong>多数行为、想法、反应都在跑一些“在你能投票之前就被安装好”的脚本。“我在自动驾驶”这种感觉本身已经是有用的信号 —— 多数人根本没察觉。",
+        "<div class='reflect'>你一天里自动驾驶最长的那段是什么时候 —— 把它打开的“线索”是什么？</div>",
+        "<strong>第一步不是对抗自动驾驶，</strong>是<em>命名那个线索</em>。早上抓手机；下午三点开始刷；深夜资讯循环。每个线索都是一扇门 —— 在你能看见这扇门之前，你无法选择“在门口做什么”。",
+        "<strong>当你能可靠地命名三个线索一周后，</strong>挑一个 —— 只挑一个。在线索与动作之间插入 60 秒的暂停。不要急着去做“对的事”，先看看：当脚本无法畅通运行时，会发生什么。"
       ]
     }
   },
   external: {
-    q: { en: "My desires don't feel like mine.", zh: "我的"想要"感觉不像我的。" },
+    q: { en: "My desires don't feel like mine.", zh: "我的“想要”感觉不像我的。" },
     a: {
       en: [
         "<strong>This is one of the most useful sentences you can say honestly.</strong> 'I want X' is a much more constructed thing than the language suggests. Almost every want has a source — an environment, a peer, an algorithm, a story.",
@@ -205,9 +205,9 @@ const GUIDE = {
         "<strong>Most don't survive the question.</strong> A few do — and those are <em>extremely</em> valuable, because you've audited them. The rest you can let go without ceremony. They were never load-bearing."
       ],
       zh: [
-        "<strong>这是你能诚实说出口最有用的句子之一。</strong>"我想要 X"是一个比语法暗示的"被构建"得多得多的事。几乎每个"想要"都有来源 —— 一个环境、一个同伴、一个算法、一个故事。",
-        "<div class='reflect'>对一个具体的、反复出现的"想要" —— 挑一个 —— 问三个问题：这件事最早是谁的声音想要的？它从什么时候开始对我"变得重要"？什么环境正在奖励这个"想要"？</div>",
-        "<strong>这不是一个用来羞愧的练习。</strong>继承的"想要"不比自著的差。问题不是"这是不是我的" —— 那是二元、没用的问题。问题是：在看清来源之后，<em>我还想继续投资在它上面吗？</em>",
+        "<strong>这是你能诚实说出口最有用的句子之一。</strong>“我想要 X”是一个比语法暗示的“被构建”得多得多的事。几乎每个“想要”都有来源 —— 一个环境、一个同伴、一个算法、一个故事。",
+        "<div class='reflect'>对一个具体的、反复出现的“想要” —— 挑一个 —— 问三个问题：这件事最早是谁的声音想要的？它从什么时候开始对我“变得重要”？什么环境正在奖励这个“想要”？</div>",
+        "<strong>这不是一个用来羞愧的练习。</strong>继承的“想要”不比自著的差。问题不是“这是不是我的” —— 那是二元、没用的问题。问题是：在看清来源之后，<em>我还想继续投资在它上面吗？</em>",
         "<strong>多数想要扛不过这个问题。</strong>少数能扛过 —— 而那些是<em>极其</em>有价值的，因为它们被你审计过了。其他的，可以悄悄放下。它们本来就不承重。"
       ]
     }
@@ -222,10 +222,10 @@ const GUIDE = {
         "<strong>If you can't imagine it without those specific conditions</strong> — the thought is conditional. Not invalid, just <em>contingent</em>. Hold it more lightly. Update it more easily. Don't bet your life on a thought that came from a context you didn't choose."
       ],
       zh: [
-        "<strong>严格地说：多数想法不是。</strong>大脑跑的是被家庭、学校、同伴、媒介训练出来的语言模型。"我的想法"通常只意味着"今天，这个想法、用这个声音，从这具头骨穿过"。真正"自著"的，比代词"我"暗示的稀有得多。",
+        "<strong>严格地说：多数想法不是。</strong>大脑跑的是被家庭、学校、同伴、媒介训练出来的语言模型。“我的想法”通常只意味着“今天，这个想法、用这个声音，从这具头骨穿过”。真正“自著”的，比代词“我”暗示的稀有得多。",
         "<div class='reflect'>对一个反复出现的想法 —— 问：如果我在另一个国家、另一对父母、另一个平台上长大，我会以同样的力度想到它吗？</div>",
         "<strong>如果会 —— 那这个想法在有意义的意义上，大概率是你的。</strong>",
-        "<strong>如果离开那些具体条件你就想象不出它</strong> —— 那这个想法是<em>有条件的</em>。它不一定无效，但它是<em>偶然</em>的。轻轻地拿着它，更容易地更新它。不要把人生押在一个"来自你没选过的语境"的想法上。"
+        "<strong>如果离开那些具体条件你就想象不出它</strong> —— 那这个想法是<em>有条件的</em>。它不一定无效，但它是<em>偶然</em>的。轻轻地拿着它，更容易地更新它。不要把人生押在一个“来自你没选过的语境”的想法上。"
       ]
     }
   },
@@ -239,9 +239,9 @@ const GUIDE = {
         "<strong>Bigger decisions follow.</strong> They have to come downstream of the small ones — or the system won't believe you, and won't release the energy you need to actually move."
       ],
       zh: [
-        "<strong>"等"是一个曾经奏效的策略。</strong>更早的某个时刻，"主动"曾让你付出代价，于是系统学到：不决定、不选择、不<em>显著地</em>想要 —— 这样会更安全。",
-        "<div class='reflect'>更早一些，是不是有过这样的时刻：你公开地"想要"什么，结果被惩罚或被羞辱？</div>",
-        "<strong>修复是一连串"小幅度的、反复的"自主行为。</strong>不是"设计我的人生"，是：今天的早餐有意识地选；选哪首歌；坐哪把椅子。小、频繁、刻意。神经系统要先重新学到"想要是安全的"，更大的选择才会重新上线。",
+        "<strong>“等”是一个曾经奏效的策略。</strong>更早的某个时刻，“主动”曾让你付出代价，于是系统学到：不决定、不选择、不<em>显著地</em>想要 —— 这样会更安全。",
+        "<div class='reflect'>更早一些，是不是有过这样的时刻：你公开地“想要”什么，结果被惩罚或被羞辱？</div>",
+        "<strong>修复是一连串“小幅度的、反复的”自主行为。</strong>不是“设计我的人生”，是：今天的早餐有意识地选；选哪首歌；坐哪把椅子。小、频繁、刻意。神经系统要先重新学到“想要是安全的”，更大的选择才会重新上线。",
         "<strong>大决定会跟着来。</strong>它们必须在小决定的下游 —— 否则系统不会信你，不会释放你真正去动所需要的能量。"
       ]
     }
@@ -256,10 +256,10 @@ const GUIDE = {
         "<strong>Two: stop volunteering for evaluation.</strong> Most performance happens in places that aren't actually grading. Notice when you're auditioning for nothing. The energy frees up almost immediately."
       ],
       zh: [
-        "<strong>"表演"是学校训练的。</strong>你学会了"为评价者好好表现"。评价者早就走了，反射还在。你可以一个人待在房间里，仍然在表演 —— 表演给一个"内化的、其实已经不存在的"观众。",
+        "<strong>“表演”是学校训练的。</strong>你学会了“为评价者好好表现”。评价者早就走了，反射还在。你可以一个人待在房间里，仍然在表演 —— 表演给一个“内化的、其实已经不存在的”观众。",
         "<div class='reflect'>你脑里的观众是谁？多半是一个合成体 —— 8 岁的父母、13 岁的老师、17 岁的同伴、25 岁的算法。</div>",
-        "<strong>两件练习。</strong>一：<em>做一件不会被任何人知道的事</em>。不为 Instagram、不为故事。那一刻浮上来的不适，是你把"我可以"外包给观众的代价。",
-        "<strong>二：停止主动报名"被评价"。</strong>多数表演发生在<em>根本没人在打分</em>的场合。注意自己在为虚空试镜。能量几乎立刻就会被释放出来。"
+        "<strong>两件练习。</strong>一：<em>做一件不会被任何人知道的事</em>。不为 Instagram、不为故事。那一刻浮上来的不适，是你把“我可以”外包给观众的代价。",
+        "<strong>二：停止主动报名“被评价”。</strong>多数表演发生在<em>根本没人在打分</em>的场合。注意自己在为虚空试镜。能量几乎立刻就会被释放出来。"
       ]
     }
   }
